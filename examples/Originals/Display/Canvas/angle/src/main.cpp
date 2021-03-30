@@ -21,8 +21,14 @@ void setup()
     canvas.drawEllipse(100, 300, 40, 20, 15);
     canvas.fillEllipse(100, 350, 40, 20, 15);
 
-    canvas.drawRect(200, 300, 200, 200, 15);
-    canvas.fillRect(200, 500, 200, 200, 15);
+    canvas.drawRect(200, 300, 100, 100, 15);
+    canvas.fillRect(200, 400, 100, 100, 15);
+
+    canvas.drawRoundRect(200, 500, 100, 100, 20, 15);
+    canvas.fillRoundRect(100, 500, 100, 100, 20, 15);
+
+    canvas.drawTriangle(450,  300, 400, 400, 500, 400, 15);
+    canvas.fillTriangle(450,  400, 400, 500, 500, 500, 15);
 
     canvas.pushCanvas(0,0,UPDATE_MODE_DU4);
 }
